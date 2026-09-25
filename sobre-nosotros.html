@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADUZ — Sobre Nosotros</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">ADUZ</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="actividades.html" class="nav-link">Actividades</a></li>
+          <li><a href="anuncios.html" class="nav-link">Anuncios</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-small">
+    <h1>Sobre Nosotros</h1>
+    <p class="hero-subtitle">Quiénes somos y por qué existe ADUZ.</p>
+  </section>
+
+  <section class="section">
+    <p class="section-text">
+      ADUZ es la Asociación de Debate de la Universidad de Zaragoza, un espacio abierto a todos los estudiantes
+      donde fomentamos el pensamiento crítico, la oratoria y el debate competitivo a través de torneos, talleres
+      y encuentros con otras asociaciones de España y Europa.
+    </p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <h3>Pensamiento crítico</h3>
+        <p>Fomentamos el análisis riguroso de los argumentos, propios y ajenos.</p>
+      </div>
+      <div class="card">
+        <h3>Comunidad</h3>
+        <p>Creamos vínculos entre estudiantes, profesores y otras asociaciones de debate.</p>
+      </div>
+      <div class="card">
+        <h3>Oratoria</h3>
+        <p>Ayudamos a perder el miedo a hablar en público con formación práctica constante.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Historia / misión: sustituye este texto de ejemplo por el real de la asociación -->
+  <section class="section" style="background-color:#ffffff; border-radius:12px;">
+    <h2 class="section-title">Nuestra historia</h2>
+    <p class="section-text">
+      ADUZ nació de la iniciativa de un grupo de estudiantes de la Universidad de Zaragoza interesados en el debate
+      competitivo. Desde entonces, hemos organizado y participado en torneos a nivel nacional e internacional,
+      formando a nuevas generaciones de debatientes cada curso académico.
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> ADUZ — Asociación de Debate de la Universidad de Zaragoza. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

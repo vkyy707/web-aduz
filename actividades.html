@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADUZ — Actividades</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">ADUZ</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="actividades.html" class="nav-link">Actividades</a></li>
+          <li><a href="anuncios.html" class="nav-link">Anuncios</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-small">
+    <h1>Actividades</h1>
+    <p class="hero-subtitle">Torneos, talleres y encuentros organizados o coorganizados por ADUZ.</p>
+  </section>
+
+  <section class="section">
+    <!-- Cada tarjeta es una actividad. Para añadir una nueva, copia un .card entero. -->
+    <div class="cards-grid">
+
+      <div class="card activity-card">
+        <h3>II Torneo de Debate Nacional de Zaragoza</h3>
+        <div class="activity-meta">
+          <span>&#128197; 15 - 17 marzo 2025</span>
+          <span>&#129309; ADUZ y asociaciones nacionales</span>
+        </div>
+        <p>Torneo nacional abierto a asociaciones universitarias de toda España, con formato de debate parlamentario.</p>
+      </div>
+
+      <div class="card activity-card">
+        <h3>IV Torneo BP ADUZ</h3>
+        <div class="activity-meta">
+          <span>&#128197; Abril 2025</span>
+          <span>&#129309; ADUZ y asociaciones universitarias</span>
+        </div>
+        <p>Torneo en formato British Parliamentary organizado íntegramente por ADUZ en Zaragoza.</p>
+      </div>
+
+      <div class="card activity-card">
+        <h3>XVI Torneo de Bachillerato</h3>
+        <div class="activity-meta">
+          <span>&#128197; Mayo 2025</span>
+          <span>&#129309; Institutos de Aragón</span>
+        </div>
+        <p>Torneo dirigido a estudiantes de bachillerato de la provincia, pensado como primer contacto con el debate.</p>
+      </div>
+
+      <div class="card activity-card">
+        <h3>D-EU Debating Córdoba 2025</h3>
+        <div class="activity-meta">
+          <span>&#128197; Junio 2025</span>
+          <span>&#129309; Asociaciones europeas de debate</span>
+        </div>
+        <p>Encuentro europeo de debate universitario celebrado en Córdoba, con delegaciones de varios países.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> ADUZ — Asociación de Debate de la Universidad de Zaragoza. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
