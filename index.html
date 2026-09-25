@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADUZ — Asociación de Debate de la Universidad de Zaragoza</title>
+  <meta name="description" content="ADUZ, Asociación de Debate de la Universidad de Zaragoza. Torneos, talleres y comunidad de debate.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================= HEADER / NAVEGACIÓN ======================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">ADUZ</a>
+
+      <!-- Botón hamburguesa para móvil -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#junta" class="nav-link">Junta Directiva</a></li>
+          <li><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="#actividades" class="nav-link">Actividades</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================= SECCIÓN INICIO (HERO) ======================= -->
+  <section id="inicio" class="section hero">
+    <div class="hero-content">
+      <h1>Bienvenido a ADUZ</h1>
+      <p class="hero-subtitle">La Asociación de Debate de la Universidad de Zaragoza: un espacio para pensar, argumentar y crecer a través de la palabra.</p>
+      <a href="#contacto" class="btn btn-primary">Únete</a>
+    </div>
+  </section>
+
+  <!-- ======================= A) CARRUSEL DE ACTIVIDADES ======================= -->
+  <section class="section carousel-section" aria-label="Carrusel de actividades">
+    <h2 class="section-title">Nuestras actividades en imágenes</h2>
+
+    <div class="carousel" id="activitiesCarousel">
+      <div class="carousel-track" id="activitiesTrack">
+
+        <!-- Cada .carousel-slide es una actividad. Para añadir más, copia este bloque -->
+        <a href="#actividades" class="carousel-slide">
+          <img src="https://picsum.photos/800/500?random=1" alt="II Torneo de Debate Nacional de Zaragoza">
+          <div class="slide-overlay">
+            <h3>II Torneo de Debate Nacional de Zaragoza</h3>
+            <p class="slide-date">15 - 17 marzo 2025</p>
+            <p class="slide-assoc">Con: ADUZ, asociaciones nacionales invitadas</p>
+          </div>
+        </a>
+
+        <a href="#actividades" class="carousel-slide">
+          <img src="https://picsum.photos/800/500?random=2" alt="IV Torneo BP ADUZ">
+          <div class="slide-overlay">
+            <h3>IV Torneo BP ADUZ</h3>
+            <p class="slide-date">Abril 2025</p>
+            <p class="slide-assoc">Con: ADUZ y asociaciones universitarias</p>
+          </div>
+        </a>
+
+        <a href="#actividades" class="carousel-slide">
+          <img src="https://picsum.photos/800/500?random=3" alt="XVI Torneo de Bachillerato">
+          <div class="slide-overlay">
+            <h3>XVI Torneo de Bachillerato</h3>
+            <p class="slide-date">Mayo 2025</p>
+            <p class="slide-assoc">Con: institutos de Aragón</p>
+          </div>
+        </a>
+
+        <a href="#actividades" class="carousel-slide">
+          <img src="https://picsum.photos/800/500?random=4" alt="D-EU Debating Córdoba 2025">
+          <div class="slide-overlay">
+            <h3>D-EU Debating Córdoba 2025</h3>
+            <p class="slide-date">Junio 2025</p>
+            <p class="slide-assoc">Con: asociaciones europeas de debate</p>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Flechas de navegación -->
+      <button class="carousel-arrow prev" id="activitiesPrev" aria-label="Anterior">&#10094;</button>
+      <button class="carousel-arrow next" id="activitiesNext" aria-label="Siguiente">&#10095;</button>
+
+      <!-- Puntos indicadores (se generan también por JS, esto es la base) -->
+      <div class="carousel-dots" id="activitiesDots"></div>
+    </div>
+  </section>
+
+  <!-- ======================= B) CARRUSEL DE REELS DE INSTAGRAM ======================= -->
+  <section class="section reels-section" aria-label="Reels de Instagram">
+    <h2 class="section-title">Síguenos en Instagram</h2>
+
+    <div class="carousel reels-carousel" id="reelsCarousel">
+      <div class="carousel-track reels-track" id="reelsTrack">
+
+        <!-- Cada tarjeta abre el Instagram de la asociación. Para añadir más, copia el bloque -->
+        <a href="https://instagram.com/debatesuz" target="_blank" rel="noopener noreferrer" class="reel-card">
+          <img src="https://picsum.photos/400/711?random=11" alt="Reel de Instagram 1">
+          <span class="reel-icon">&#128247;</span>
+        </a>
+
+        <a href="https://instagram.com/debatesuz" target="_blank" rel="noopener noreferrer" class="reel-card">
+          <img src="https://picsum.photos/400/711?random=12" alt="Reel de Instagram 2">
+          <span class="reel-icon">&#128247;</span>
+        </a>
+
+        <a href="https://instagram.com/debatesuz" target="_blank" rel="noopener noreferrer" class="reel-card">
+          <img src="https://picsum.photos/400/711?random=13" alt="Reel de Instagram 3">
+          <span class="reel-icon">&#128247;</span>
+        </a>
+
+        <a href="https://instagram.com/debatesuz" target="_blank" rel="noopener noreferrer" class="reel-card">
+          <img src="https://picsum.photos/400/711?random=14" alt="Reel de Instagram 4">
+          <span class="reel-icon">&#128247;</span>
+        </a>
+
+      </div>
+
+      <button class="carousel-arrow prev" id="reelsPrev" aria-label="Anterior">&#10094;</button>
+      <button class="carousel-arrow next" id="reelsNext" aria-label="Siguiente">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ======================= C) CRÓNICAS / TESTIMONIOS ======================= -->
+  <section class="section testimonials-section" aria-label="Testimonios">
+    <h2 class="section-title">Lo que dicen de nosotros</h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img class="testimonial-photo" src="https://picsum.photos/150/150?random=21" alt="Foto de Laura G.">
+        <h3>Laura G.</h3>
+        <p class="testimonial-role">Estudiante de Derecho</p>
+        <p class="testimonial-quote">"Entrar en ADUZ cambió mi forma de argumentar y de escuchar a los demás. Es la mejor decisión que tomé en la carrera."</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img class="testimonial-photo" src="https://picsum.photos/150/150?random=22" alt="Foto de Javier M.">
+        <h3>Javier M.</h3>
+        <p class="testimonial-role">Profesor colaborador</p>
+        <p class="testimonial-quote">"Ver crecer a los estudiantes en oratoria y pensamiento crítico gracias a ADUZ es muy gratificante como docente."</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img class="testimonial-photo" src="https://picsum.photos/150/150?random=23" alt="Foto de Marta S.">
+        <h3>Marta S.</h3>
+        <p class="testimonial-role">Estudiante de Periodismo</p>
+        <p class="testimonial-quote">"Los torneos de ADUZ me han abierto puertas para conocer gente de toda España y perder el miedo a hablar en público."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= JUNTA DIRECTIVA ======================= -->
+  <section id="junta" class="section junta-section">
+    <h2 class="section-title">Junta Directiva</h2>
+    <p class="section-text">Aquí puedes presentar a los miembros de la junta directiva actual de ADUZ (nombre, cargo y una breve foto). Sustituye estas tarjetas de ejemplo por los datos reales.</p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <img class="testimonial-photo" src="https://picsum.photos/150/150?random=31" alt="Presidente/a">
+        <h3>Nombre Apellido</h3>
+        <p class="testimonial-role">Presidencia</p>
+      </div>
+      <div class="card">
+        <img class="testimonial-photo" src="https://picsum.photos/150/150?random=32" alt="Vicepresidente/a">
+        <h3>Nombre Apellido</h3>
+        <p class="testimonial-role">Vicepresidencia</p>
+      </div>
+      <div class="card">
+        <img class="testimonial-photo" src="https://picsum.photos/150/150?random=33" alt="Secretario/a">
+        <h3>Nombre Apellido</h3>
+        <p class="testimonial-role">Secretaría</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SOBRE NOSOTROS ======================= -->
+  <section id="sobre-nosotros" class="section about-section">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p class="section-text">
+      ADUZ es la Asociación de Debate de la Universidad de Zaragoza, un espacio abierto a todos los estudiantes
+      donde fomentamos el pensamiento crítico, la oratoria y el debate competitivo a través de torneos, talleres
+      y encuentros con otras asociaciones de España y Europa.
+    </p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <h3>Pensamiento crítico</h3>
+        <p>Fomentamos el análisis riguroso de los argumentos, propios y ajenos.</p>
+      </div>
+      <div class="card">
+        <h3>Comunidad</h3>
+        <p>Creamos vínculos entre estudiantes, profesores y otras asociaciones de debate.</p>
+      </div>
+      <div class="card">
+        <h3>Oratoria</h3>
+        <p>Ayudamos a perder el miedo a hablar en público con formación práctica constante.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= ACTIVIDADES ======================= -->
+  <section id="actividades" class="section activities-section">
+    <h2 class="section-title">Actividades</h2>
+
+    <div class="cards-grid">
+      <div class="card">
+        <h3>II Torneo de Debate Nacional de Zaragoza</h3>
+        <p>Torneo nacional abierto a asociaciones universitarias de toda España.</p>
+      </div>
+      <div class="card">
+        <h3>IV Torneo BP ADUZ</h3>
+        <p>Torneo en formato British Parliamentary organizado por ADUZ.</p>
+      </div>
+      <div class="card">
+        <h3>XVI Torneo de Bachillerato</h3>
+        <p>Torneo dirigido a estudiantes de bachillerato de la provincia.</p>
+      </div>
+      <div class="card">
+        <h3>D-EU Debating Córdoba 2025</h3>
+        <p>Encuentro europeo de debate universitario celebrado en Córdoba.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= D) FORMULARIO DE CONTACTO ======================= -->
+  <section id="contacto" class="section contact-section">
+    <h2 class="section-title">Contacto</h2>
+    <p class="section-text">
+      Escríbenos a través del formulario o síguenos en Instagram:
+      <a href="https://instagram.com/debatesuz" target="_blank" rel="noopener noreferrer">@debatesuz</a>
+    </p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-group">
+        <label for="nombre">Nombre y apellidos *</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono (opcional)</label>
+        <input type="tel" id="telefono" name="telefono">
+      </div>
+
+      <div class="form-group">
+        <label for="tipoColaboracion">Tipo de colaboración *</label>
+        <select id="tipoColaboracion" name="tipoColaboracion" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="Asociación">Asociación</option>
+          <option value="Profesor">Profesor</option>
+          <option value="Estudiante">Estudiante</option>
+        </select>
+      </div>
+
+      <!-- Este campo solo se muestra si se elige "Estudiante" (ver script.js más abajo) -->
+      <div class="form-group" id="carreraGroup" hidden>
+        <label for="carrera">¿Qué carrera estudias?</label>
+        <input type="text" id="carrera" name="carrera">
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje (opcional)</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+
+      <!-- Mensaje de confirmación tras el envío simulado -->
+      <p id="formConfirmation" class="form-confirmation" hidden>
+        ¡Gracias! Tu mensaje se ha enviado correctamente. Te contactaremos pronto.
+      </p>
+    </form>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> ADUZ — Asociación de Debate de la Universidad de Zaragoza. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- ======================= JAVASCRIPT ======================= -->
+  <script>
+    // ---------------------------------------------------------------
+    // 1. AÑO ACTUAL EN EL FOOTER
+    // ---------------------------------------------------------------
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---------------------------------------------------------------
+    // 2. MENÚ MÓVIL (hamburguesa)
+    // ---------------------------------------------------------------
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('open');
+      menuToggle.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Cierra el menú móvil al pulsar un enlace de navegación
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        menuToggle.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ---------------------------------------------------------------
+    // 3. FUNCIÓN GENÉRICA PARA CREAR UN CARRUSEL
+    //    Se reutiliza tanto para el carrusel de actividades como
+    //    para el de reels de Instagram.
+    // ---------------------------------------------------------------
+    function initCarousel({ trackId, prevId, nextId, dotsId, autoplay = false }) {
+      const track = document.getElementById(trackId);
+      const prevBtn = document.getElementById(prevId);
+      const nextBtn = document.getElementById(nextId);
+      const dotsContainer = dotsId ? document.getElementById(dotsId) : null;
+      const slides = Array.from(track.children);
+      let currentIndex = 0;
+      let autoplayTimer = null;
+
+      // Crea un punto indicador por cada slide (si el contenedor de puntos existe)
+      if (dotsContainer) {
+        slides.forEach((_, i) => {
+          const dot = document.createElement('button');
+          dot.classList.add('dot');
+          dot.setAttribute('aria-label', 'Ir a la diapositiva ' + (i + 1));
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        });
+      }
+
+      function updateDots() {
+        if (!dotsContainer) return;
+        Array.from(dotsContainer.children).forEach((dot, i) => {
+          dot.classList.toggle('active', i === currentIndex);
+        });
+      }
+
+      // Mueve el carrusel a un índice concreto
+      function goToSlide(index) {
+        currentIndex = (index + slides.length) % slides.length;
+        const offset = -currentIndex * 100;
+        track.style.transform = `translateX(${offset}%)`;
+        updateDots();
+      }
+
+      function nextSlide() { goToSlide(currentIndex + 1); }
+      function prevSlide() { goToSlide(currentIndex - 1); }
+
+      nextBtn.addEventListener('click', () => { nextSlide(); resetAutoplay(); });
+      prevBtn.addEventListener('click', () => { prevSlide(); resetAutoplay(); });
+
+      // Autoplay: avanza automáticamente cada 5 segundos
+      function startAutoplay() {
+        if (!autoplay) return;
+        autoplayTimer = setInterval(nextSlide, 5000);
+      }
+      function stopAutoplay() {
+        clearInterval(autoplayTimer);
+      }
+      function resetAutoplay() {
+        stopAutoplay();
+        startAutoplay();
+      }
+
+      // Se detiene el autoplay al pasar el ratón por encima del carrusel
+      const carouselWrapper = track.closest('.carousel');
+      carouselWrapper.addEventListener('mouseenter', stopAutoplay);
+      carouselWrapper.addEventListener('mouseleave', startAutoplay);
+
+      goToSlide(0);
+      startAutoplay();
+    }
+
+    // Inicializamos el carrusel de actividades (con puntos y autoplay)
+    initCarousel({
+      trackId: 'activitiesTrack',
+      prevId: 'activitiesPrev',
+      nextId: 'activitiesNext',
+      dotsId: 'activitiesDots',
+      autoplay: true
+    });
+
+    // Inicializamos el carrusel de reels (sin puntos, sin autoplay obligatorio)
+    initCarousel({
+      trackId: 'reelsTrack',
+      prevId: 'reelsPrev',
+      nextId: 'reelsNext',
+      dotsId: null,
+      autoplay: false
+    });
+
+    // ---------------------------------------------------------------
+    // 4. MOSTRAR/OCULTAR CAMPO "CARRERA" SEGÚN TIPO DE COLABORACIÓN
+    // ---------------------------------------------------------------
+    const tipoColaboracion = document.getElementById('tipoColaboracion');
+    const carreraGroup = document.getElementById('carreraGroup');
+    const carreraInput = document.getElementById('carrera');
+
+    tipoColaboracion.addEventListener('change', () => {
+      if (tipoColaboracion.value === 'Estudiante') {
+        carreraGroup.hidden = false;
+      } else {
+        carreraGroup.hidden = true;
+        carreraInput.value = ''; // limpia el campo si se oculta
+      }
+    });
+
+    // ---------------------------------------------------------------
+    // 5. ENVÍO SIMULADO DEL FORMULARIO DE CONTACTO
+    // ---------------------------------------------------------------
+    const contactForm = document.getElementById('contactForm');
+    const formConfirmation = document.getElementById('formConfirmation');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault(); // evita que la página se recargue
+
+      // --- AQUÍ IRÍA LA CONEXIÓN A UN SERVICIO REAL DE FORMULARIOS ---
+      // Por ejemplo, con Formspree:
+      //
+      //   fetch('https://formspree.io/f/TU_ID_DE_FORMULARIO', {
+      //     method: 'POST',
+      //     headers: { 'Accept': 'application/json' },
+      //     body: new FormData(contactForm)
+      //   })
+      //   .then(response => {
+      //     if (response.ok) { /* mostrar mensaje de éxito */ }
+      //   });
+      //
+      // O con Netlify Forms, añadiendo el atributo `data-netlify="true"`
+      // al <form> y desplegando el sitio en Netlify en lugar de GitHub Pages.
+      //
+      // Mientras no haya backend, simplemente simulamos el envío:
+
+      formConfirmation.hidden = false;
+      contactForm.reset();
+      carreraGroup.hidden = true; // vuelve a ocultar el campo de carrera
+
+      // Oculta el mensaje de confirmación pasados unos segundos
+      setTimeout(() => { formConfirmation.hidden = true; }, 6000);
+    });
+  </script>
+
+</body>
+</html>
