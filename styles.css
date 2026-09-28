@@ -344,18 +344,6 @@ select:focus-visible, textarea:focus-visible {
 }
 
 /* Control de volumen: solo se muestra sobre el vídeo central */
-.coverflow-controls {
-  position: absolute;
-  left: 8px;
-  right: 8px;
-  bottom: 8px;
-  display: none;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.45);
-  padding: 0.4rem 0.6rem;
-  border-radius: 8px;
-}
 button {
   padding: 5px;
   border-radius: 100%;
@@ -386,9 +374,6 @@ button:active {
 }
 
 .coverflow-item.is-center .coverflow-controls { display: flex; }
-
-.volume-icon { color: var(--color-blanco); font-size: 0.9rem; }
-.volume-slider { flex: 1; accent-color: var(--color-acento); cursor: pointer; }
 
 .coverflow-hint {
   text-align: center;
