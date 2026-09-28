@@ -227,4 +227,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---------------------------------------------------------------
+  // 8. AVISO DE PRIVACIDAD: se muestra una sola vez y recuerda la elección
+  // ---------------------------------------------------------------
+  const cookieBanner = document.getElementById('cookieBanner');
+
+  if (cookieBanner) {
+    let saved = null;
+    try { saved = localStorage.getItem('aduz-privacidad'); } catch (e) { /* sin acceso a localStorage */ }
+
+    if (!saved) cookieBanner.hidden = false; // primera visita: lo mostramos
+
+    function closeBanner(choice) {
+      try { localStorage.setItem('aduz-privacidad', choice); } catch (e) {}
+      cookieBanner.hidden = true;
+    }
+
+    document.getElementById('cookieAccept').addEventListener('click', () => closeBanner('aceptado'));
+    document.getElementById('cookieReject').addEventListener('click', () => closeBanner('rechazado'));
+  }
+
 });
